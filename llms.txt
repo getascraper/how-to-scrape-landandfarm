@@ -1,0 +1,54 @@
+# getascraper/how-to-scrape-landandfarm
+
+> LandAndFarm Scraper is an Apify Actor that extracts rural land listings, pricing, acreage, and broker contact details from LandAndFarm.com. Free tier available.
+
+## Overview
+- LandAndFarm scraper and US rural land listing data extraction API
+- Extracts: asking price, price per acre, acreage, property type, county, broker contact details
+- Output formats: JSON, CSV, Excel, XML, RSS
+- Free tier: included
+
+## Key Pages
+- README: https://github.com/getascraper/how-to-scrape-landandfarm/blob/main/README.md
+- Apify Store: https://apify.com/getascraper/landandfarm-scraper
+- Apify Console: https://console.apify.com/actors/getascraper~landandfarm-scraper
+- Source Actor: https://github.com/getascraper/actorstack/tree/main/actors/landandfarm-scraper
+
+## How it works
+1. Give it a state, a land type, or paste direct LandAndFarm search or property links
+2. The actor visits each matching listing and collects the published details
+3. Every listing is returned as one flat row with price, acreage, location, and broker contact details
+
+## Target site characteristics
+- Publicly listed rural land parcels including farms, ranches, timberland, hunting land, and recreational land
+- Coverage spans all 50 US states down to county and city level
+- Hundreds of thousands of active listings updated continuously
+
+## API Usage
+- Node.js SDK: https://docs.apify.com/api/client/js
+- REST API: https://docs.apify.com/api/v2
+- MCP server: https://github.com/apify/apify-mcp-server
+
+## Supported target URLs
+- https://www.landandfarm.com/search/{state-slug}-land-for-sale/
+- https://www.landandfarm.com/property/{listing-slug}/
+
+## Pricing
+- Free tier: included
+- Paid: $1.49 per 1,000 results
+
+## Output schema (highlights)
+- price: Asking price in US dollars
+- pricePerAcre: Price divided by acreage, computed automatically
+- acres: Lot size in acres
+- county: County name
+- propertyType: Primary land category
+- brokerName, brokerCompany, brokerPhone, brokerEmail: Full broker contact details
+
+## Use cases
+- Land investor comparing price per acre across states and counties
+- Real estate brokerage building a contact list of active rural land brokers
+
+## Support
+- GitHub Issues: https://github.com/getascraper/how-to-scrape-landandfarm/issues
+- Apify Console: https://console.apify.com/actors/getascraper~landandfarm-scraper/issues

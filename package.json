@@ -1,0 +1,38 @@
+{
+  "name": "how-to-scrape-landandfarm",
+  "version": "1.0.0",
+  "description": "Scrape LandAndFarm.com land listings across all 50 US states. Returns asking price, price per acre, acreage, property type, county, and full broker contact details (name, company, phone, email). Spreadsheet-ready output.",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "keywords": [
+    "apify",
+    "apify-actor",
+    "data-extraction",
+    "lead-generation",
+    "real-estate",
+    "land-for-sale",
+    "landandfarm",
+    "landandfarm-scraper",
+    "landandfarm-data",
+    "land-listings",
+    "farms-for-sale",
+    "ranches-for-sale",
+    "acreage",
+    "price-per-acre",
+    "broker-leads",
+    "timberland",
+    "hunting-land",
+    "united-states",
+    "county-data",
+    "b2b-leads"
+  ],
+  "author": "Devansh-365",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "apify-client": "^2.12.0",
+    "dotenv": "^16.5.0"
+  }
+}
